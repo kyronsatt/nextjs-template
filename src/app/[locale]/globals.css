@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #363636;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #575757;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7e7e7e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@supports (font: -apple-system-body) and (-webkit-appearance: none) {
+  img[loading="lazy"] {
+    clip-path: inset(0.6px);
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-weight: 200;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+
+h1 {
+  @apply font-black text-xl lg:text-4xl wide:text-5xl;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+.text-gradient-primary-blue-1 {
+  @apply bg-gradient-primary-blue-1 inline text-transparent bg-clip-text;
+}
+
+.text-gradient-purple-pink {
+  @apply bg-gradient-purple-pink inline text-transparent bg-clip-text;
+}
+
+.text-gradient-orange-yellow {
+  @apply bg-gradient-orange-yellow inline text-transparent bg-clip-text;
+}

@@ -1,0 +1,32 @@
+{
+  "Menu": {
+    "pageOneButton": "Page One",
+    "pageTwoButton": "Page Two"
+  },
+  "Footer": {
+    "rightsReservation": "All rights reserved to AppName.",
+    "disclaimer": "AppName does not ..."
+  },
+  "ContactForm": {
+    "title": "Contact Us",
+    "fields": {
+      "name": {
+        "label": "Name",
+        "errorMessage": "Enter real name"
+      },
+      "email": {
+        "label": "Email",
+        "errorMessage": "Please enter a valid email"
+      },
+      "phone": {
+        "label": "Phone",
+        "errorMessage": "Please enter a valid phone number"
+      }
+    },
+    "submitButton": "Submit"
+  },
+  "Metadata": {
+    "title": "AppName",
+    "description": "App description"
+  }
+}

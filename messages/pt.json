@@ -1,0 +1,29 @@
+{
+  "Menu": {
+    "pageOneButton": "Página 1",
+    "pageTwoButton": "Página 2"
+  },
+  "Footer": {
+    "rightsReservation": "Todos os direitos reservados à AppName.",
+    "disclaimer": "A AppName não..."
+  },
+  "ContactForm": {
+    "title": "Entre em contato",
+    "fields": {
+      "name": {
+        "label": "Nome",
+        "errorMessage": "Insira um nome real"
+      },
+      "email": { "label": "Email", "errorMessage": "Insira um email válido" },
+      "phone": {
+        "label": "Telefone",
+        "errorMessage": "Insira um número de telefone válido"
+      }
+    },
+    "submitButton": "Enviar"
+  },
+  "Metadata": {
+    "title": "AppName",
+    "description": "App description"
+  }
+}
